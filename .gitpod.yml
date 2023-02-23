@@ -12,3 +12,5 @@ github:
     addComment: true
     pullRequests: true
     pullRequestsFromForks: true
+
+workspaceLocation: "projects/soroban-quest-6-1"
