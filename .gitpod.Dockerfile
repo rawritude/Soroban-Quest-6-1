@@ -11,4 +11,3 @@ RUN cargo install --locked --version 0.6.0 soroban-cli
 
 RUN apt-get update && apt-get install -y binaryen
 WORKDIR /workspace/Soroban-Quest-6-1/
-RUN git clone https://github.com/stellar/fca00c-asteroids
