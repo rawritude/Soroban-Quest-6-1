@@ -5,8 +5,11 @@ RUN apt-get update && apt-get install -yq \
     sudo \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/*
 
-# Create the gitpod user. UID must be 33333.
 RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod
+
+ENV RUSTC_WRAPPER=sccache
+ENV SCCACHE_CACHE_SIZE=5G
+ENV SCCACHE_DIR=/workspace/.sccache
 
 RUN rustup component add --toolchain stable rust-src
 RUN rustup update nightly
