@@ -14,5 +14,5 @@ github:
     pullRequestsFromForks: true
     
  tasks:
- - name: Get 6-1 Repo
- init: git clone https://github.com/stellar/fca00c-asteroids
+   - init: |
+   git clone https://github.com/stellar/fca00c-asteroids
