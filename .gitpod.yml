@@ -1,0 +1,14 @@
+image:
+  file: .gitpod.Dockerfile
+
+vscode:
+  extensions:
+    - rust-lang.rust-analyzer
+    - vadimcn.vscode-lldb
+
+github:
+  prebuilds:
+    addBadge: true
+    addComment: true
+    pullRequests: true
+    pullRequestsFromForks: true
