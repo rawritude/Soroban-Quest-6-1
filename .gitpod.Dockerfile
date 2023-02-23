@@ -27,5 +27,5 @@ RUN rustup component add --toolchain nightly rust-src
 RUN rustup default stable
 
 RUN sudo apt-get update && sudo apt-get install -y binaryen
-WORKDIR /workspace/
+WORKDIR /workspace/Soroban-Quest-6-1/
 RUN git clone https://github.com/stellar/fca00c-asteroids
