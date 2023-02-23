@@ -12,6 +12,8 @@ github:
     addComment: true
     pullRequests: true
     pullRequestsFromForks: true
-    
- tasks:
- - init: git clone https://github.com/stellar/fca00c-asteroids
+
+tasks:
+  - name: clone
+    init: |
+      git clone https://github.com/stellar/fca00c-asteroids
